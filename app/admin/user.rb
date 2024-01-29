@@ -7,7 +7,7 @@ ActiveAdmin.register User do
 
   actions :all, :except => [:destroy]
 
-  action_item :only => :show do
+  action_item :view, :only => :show do
     if user.archived
       link_to('Restore User', restore_admin_partner_connection_user_path(params[:partner_connection_id], user.id))
     else

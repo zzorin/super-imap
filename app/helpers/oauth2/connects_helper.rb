@@ -61,7 +61,7 @@ module Oauth2::ConnectsHelper
 
   def gmail_oauth2_email
     # Get the google email address.
-    data = JSON.parse(oauth2_token.get("https://www.googleapis.com/userinfo/email?alt=json").body)
-    return data["data"]["email"]
+    data = JSON.parse(oauth2_token.get("https://www.googleapis.com/oauth2/v3/userinfo?alt=json").body)
+    return data["email"]
   end
 end

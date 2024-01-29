@@ -17,9 +17,11 @@ gem 'rest-client'               , '~> 1.7.2'
 gem 'oauth'                     , '~> 0.4.7'
 gem 'oauth2'                    , '~> 0.9.3'
 gem 'airbrake'                  , '~> 4.1.0'
-gem 'activeadmin'               , '1.0.0.pre', :github => 'activeadmin', :ref => '0becbef0'
+gem 'activeadmin'               , '1.0.0.pre5'
 gem 'gibberish'                 , '~> 1.4.0'
 gem 'foreman'                   , '~> 0.75.0'
+gem 'bcrypt', '3.1.16'
+gem 'bourbon', '3.0.1'
 
 gem 'rails_stdout_logging'      , :group => [:staging, :production]
 gem 'rails_12factor'            , :group => :production
